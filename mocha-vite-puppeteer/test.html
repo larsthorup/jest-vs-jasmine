@@ -3,12 +3,8 @@
 
 <body>
   <script>
-    // Note: globals expected by React and React Testing Library
-    // not sure why they must be here, instead of in test.js
+    // Note: globals expected by Enzyme Library
     global = window;
-    process = {
-      env: {}
-    };
   </script>
 
   <script type="module">
@@ -17,7 +13,7 @@
   </script>
   <script type="module" src="/setupTestFrameworkScriptFile.js"></script>
   <script type="module">
-    const modules = import.meta.globEager(`/tests/*/{Pane,Panel,RadioButton,RadioGroup,Switch,Toolbar,utils,WithBodyClick}/*.test.{js,jsx}`);
+    const modules = import.meta.globEager(`/tests/*/*/*.test.{js,jsx}`);
   </script>
 </body>
 

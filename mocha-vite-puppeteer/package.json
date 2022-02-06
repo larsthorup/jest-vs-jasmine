@@ -2,7 +2,7 @@
   "name": "mocha-vite-puppeteer",
   "private": true,
   "scripts": {
-    "test": "mocha-vite-puppeteer --enableBarePath false"
+    "test": "mocha-vite-puppeteer --reporter spec --enableBarePath false"
   },
   "author": "Lars Thorup <lars@zealake.com>",
   "license": "MIT",
