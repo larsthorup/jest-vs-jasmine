@@ -1,6 +1,7 @@
 jasmine/tests
 jest/tests
 vitest/tests
+mocha-vite-puppeteer/tests
 
 .pnp.*
 .yarn/*

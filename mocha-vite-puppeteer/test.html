@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+  <script>
+    // Note: globals expected by React and React Testing Library
+    // not sure why they must be here, instead of in test.js
+    global = window;
+    process = {
+      env: {}
+    };
+  </script>
+
+  <script type="module">
+    import 'mocha';
+    mocha.setup({ ui: 'bdd' });
+  </script>
+  <script type="module" src="/setupTestFrameworkScriptFile.js"></script>
+  <script type="module">
+    const modules = import.meta.globEager(`/tests/*/{Pane,Panel,RadioButton,RadioGroup,Switch,Toolbar,utils,WithBodyClick}/*.test.{js,jsx}`);
+  </script>
+</body>
+
+</html>

@@ -8,6 +8,7 @@
         "packages": [
             "jasmine",
             "jest",
+            "mocha-vite-puppeteer",
             "vitest"
         ]
     },
